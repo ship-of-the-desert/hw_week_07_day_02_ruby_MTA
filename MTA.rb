@@ -55,23 +55,3 @@ def planTrip(firstLine,firstStop,secondLine ,secondStop)
 
 
 
-
-# def planTrip(firstLine, firstStop, secondLine, secondStop) {
-    
-#     if firstLine === secondLine
-         
-#         endResult = oneLine(firstLine, firstStop, secondStop)
-#         puts"You must travel through the following stops on the #{firstLine} line: #{endResult}"
-#      els {
-#         endResult = oneLine(firstLine, firstStop, "Union Square")
-#         secondResult = oneLine(secondLine, "Union Square", secondStop)
-#         puts"you must travel through the following stops on the #{firstLine} line:  #{endResult}"
-#         puts"Change at Union Square."
-#         puts"Your journey continues through the #{secondLine} following stops: #{secondResult}"
-#     }
-#     puts "#{stops} stops in total."
-# }
-# end 
-#   end 
-
-# planTrip("6", "Astor Place", "N", "Times Square")

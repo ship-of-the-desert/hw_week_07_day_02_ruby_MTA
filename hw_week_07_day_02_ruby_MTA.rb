@@ -37,12 +37,12 @@ def plan_trip (start_line, start_stop, end_line, end_stop)
         end
     end
 
-    if end_index > end_intersection
-        end_index.downto(end_intersection+1).each do |i|
+    if end_index < end_intersection
+        (end_intersection-1).downto(end_index).each do |i|
             result.push(end_line[:stops][i])
         end
     else
-        (end_index..end_intersection-1).each do |i|
+        (end_index..end_intersection+1).each do |i|
             result.push(end_line[:stops][i])
         end
     end

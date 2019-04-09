@@ -15,6 +15,7 @@ plan_trip( :n, "Times Square", :l, "Grand Central" )
 // "Change at Union Square."
 // "Your journey continues through the following stops: 23rd, 28th, 33rd."
 // "7 stops in total."
+
 ```
 
 - There are 3 subway lines:

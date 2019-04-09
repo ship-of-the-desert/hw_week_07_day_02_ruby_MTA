@@ -5,11 +5,13 @@ $total_stops = 0
 $tr = ""
 @lines = {N => "N",
     L => "L",
-    S => "S"
+    S => "6"
      
 }
  def trip1(line,first,final , start)
-   
+    if line == 6 
+        line = S
+    end
  if line.index(first) > line.index(final)
    $total_stops= line.index(first) - line.index(final)  + $total_stops
        x =  line.index(first)
@@ -40,16 +42,27 @@ p trip1( L,"Union Square","1st" , 1)
 
 # p N[5]
 # p trip1( N,"Times Square","Union Square" , 1)
-
-
 def planTrip(line1 , stop1 , line2 , stop2 )
-    p trip1( line1 ,stop1 ,  "Union Square" , 1)
-    p 'Change at Union Square.'
-    p trip1(line2 ,"Union Square" ,  stop2 , 1)
-    p "#{$total_stops} stops in total." 
+    if line1 == line2 
+        p trip1( line1 ,stop1 ,  stop2 , 1)
+ return  p "#{$total_stops} stops in total." 
+    end 
+  p trip1( line1 ,stop1 ,  "Union Square" , 1)
+  p "Change at Union Square."
+  p trip1( line2 , "Union Square",  stop2 , 2)
+p "#{$total_stops} stops in total." 
 end
+planTrip(N, "Times Square", L, "1st")
+# planTrip(N, "Times Square", N, "8th")
 
-planTrip(N, "Times Square", S, "33rd")
+# def planTrip(line1 , stop1 , line2 , stop2 )
+#     p trip1( line1 ,stop1 ,  "Union Square" , 1)
+#     p 'Change at Union Square.'
+#     p trip1(line2 ,"Union Square" ,  stop2 , 1)
+#     p "#{$total_stops} stops in total." 
+# end
+
+# planTrip(N, "Times Square", S, "33rd")
 # planTrip("N", "Times Square", "6", "33rd"); 
 
 

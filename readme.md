@@ -10,11 +10,11 @@ planTrip("N", "Times Square", "6", "33rd");
 plan_trip( :n, "Times Square", :l, "Grand Central" )
 // This is only a suggested function name and signature.
 
-// Output shows something similar to this:
-// "You must travel through the following stops on the N line: 34th, 28th, 23rd, Union Square."
-// "Change at Union Square."
-// "Your journey continues through the following stops: 23rd, 28th, 33rd."
-// "7 stops in total."
+Output shows something similar to this:
+"You must travel through the following stops on the N line: 34th, 28th, 23rd, Union Square."
+ "Change at Union Square."
+"Your journey continues through the following stops: 23rd, 28th, 33rd."
+ "7 stops in total."
 ```
 
 - There are 3 subway lines:
